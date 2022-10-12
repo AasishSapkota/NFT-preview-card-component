@@ -1,0 +1,188 @@
+:root {
+    margin: 0px;
+    padding: 0px;
+
+    /* This is colors for the Background and box colors */
+
+    --main_BG: hsl(217, 54%, 11%);
+    --card_BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*  This is for colors */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+/*This are style sheet */
+
+
+
+body {
+    background-color: var(--main_BG);
+    font-family: 'Outfit';
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--card_BG);
+    width: 350px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto auto;
+    /* margin-top: 10vh; */
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+.container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    border-bottom: 1px solid var(--line);
+    margin: 0px 30px;
+    padding-bottom: 15px;
+}
+
+.container h2 {
+    font-weight: 600;
+    color: var(--White);
+    padding: 1px 10px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+.container h2:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.container p {
+    color: var(--White);
+    opacity: 0.5;
+    padding: 0px 10px;
+    margin-left: 5px;
+}
+
+.container ul li:first-child {
+    color: var(--Cyan);
+    margin: -40px
+}
+
+.container ul li:last-child {
+    color: var(--White);
+    opacity: 0.6;
+    margin-right: 10px;
+}
+
+.container ul li img {
+    margin-bottom: -2px;
+    padding-right: 5px;
+}
+
+/* This section is for Main image of Nft on the box  */
+.container .equilibrium {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+}
+
+.container .main-img {
+    position: relative;
+}
+
+/*  IT is used for making the active feature while hovering over the image */
+
+.container .main-img div:hover{
+    opacity: 1;
+    cursor: pointer;
+
+}
+.container .main-img div {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 10px;
+    background-color:hsl(178, 100%, 50%,50%);
+    width: 80%;
+    height:80%;
+    padding: 20px;
+    z-index: 34;
+    opacity:0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.container .main-img div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/*  This is for the text at the bottom of the page where creator name is mentioned */
+
+.creator_name {
+    color: var(--White);
+    margin-left: 2px;
+}
+
+.creator_name:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.creation {
+    color: var(--White);
+    opacity: 0.4;
+}
+
+
+/* It is for bottom content and creator name */
+
+.bottom_content {
+    margin: 20px;
+    margin-top: -5px;
+}
+
+/* This is for avatar image which is in bottom */
+
+.avatar {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 15px;
+    margin-bottom: -10px;
+}
+
+/* It is for attribution but don't know what to do */
+.attribution {
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media(min-width:375px) {
+    .container {
+        width: 350;
+        margin: auto auto;
+    }
+}
+
